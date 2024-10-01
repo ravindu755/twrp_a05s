@@ -1,0 +1,4 @@
+# USB
+vendor.usb.use_ffs_mtp=1
+vendor.usb.controller=4e00000.dwc3
+
