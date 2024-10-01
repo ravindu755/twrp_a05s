@@ -288,3 +288,23 @@
 /lib/modules/sec_nfc.ko:
 /lib/modules/qcom-spmi-pmic.ko: /lib/modules/regmap-spmi.ko /lib/modules/qti-regmap-debugfs.ko
 /lib/modules/spmi-pmic-arb.ko:
+/lib/modules/cmd.ko:
+/lib/modules/panel_event_notifier.ko:
+/lib/modules/lct_tp.ko:
+/lib/modules/tp_info.ko:
+/lib/modules/qcom_va_minidump.ko:
+/lib/modules/lct_tp.ko:
+/lib/modules/msm-mmrm.ko:
+/lib/modules/mdt_loader.ko:
+/lib/modules/atmel_mxt_ts.ko: /lib/modules/panel_event_notifier.ko
+/lib/modules/goodix_ts.ko: /lib/modules/panel_event_notifier.ko
+/lib/modules/icnl9922c.ko: /lib/modules/lct_tp.ko /lib/modules/cmd.ko /lib/modules/tp_info.ko /lib/modules/msm_drm.ko /lib/modules/qcom_va_minidump.ko /lib/modules/panel_event_notifier.ko
+/lib/modules/msm_drm.ko: /lib/modules/qcom_va_minidump.ko /lib/modules/panel_event_notifier.ko
+/lib/modules/ilitek.ko: /lib/modules/lct_tp.ko /lib/modules/cmd.ko /lib/modules/tp_info.ko /lib/modules/msm_drm.ko /lib/modules/qcom_va_minidump.ko /lib/modules/panel_event_notifier.ko
+/lib/modules/msm_video.ko: /lib/modules/msm-mmrm.ko /lib/modules/mdt_loader.ko
+/lib/modules/pt_ts.ko: /lib/modules/panel_event_notifier.ko
+/lib/modules/pt_device_access.ko: /lib/modules/pt_ts.ko /lib/modules/panel_event_notifier.ko
+/lib/modules/pt_i2c.ko: /lib/modules/pt_ts.ko /lib/modules/panel_event_notifier.ko
+/lib/modules/pt_ts.ko: /lib/modules/panel_event_notifier.ko
+/lib/modules/raydium_ts.ko: /lib/modules/panel_event_notifier.ko
+/lib/modules/synaptics_tcm_ts.ko: /lib/modules/panel_event_notifier.ko
