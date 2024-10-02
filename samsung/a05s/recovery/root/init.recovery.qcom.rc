@@ -30,6 +30,15 @@ import /init.recovery.display.rc
 on init
     write /sys/class/backlight/panel0-backlight/brightness 200
     setprop sys.usb.configfs 1
+    
+    # Load necessary modules for touch and display
+    insmod /vendor/lib/modules/qcom_va_minidump.ko
+    insmod /vendor/lib/modules/panel_event_notifier.ko
+    insmod /vendor/lib/modules/lct_tp.ko
+    insmod /vendor/lib/modules/cmd.ko
+    insmod /vendor/lib/modules/tp_info.ko
+    insmod /lib/modules/msm_drm.ko dsi_display0=qcom,mdss_dsi_v2_ili7807s_tm_fhd_90hz_video:ilitek.tpsensor=ILITEK_TMB_ILI7807S
+    insmod /vendor/lib/modules/ilitek.ko tpsensor=ILITEK_TMB_ILI7807S    
 
 on property:ro.boot.usbcontroller=*
     setprop sys.usb.controller ${ro.boot.usbcontroller}
@@ -40,3 +49,7 @@ on property:ro.boot.usbcontroller=*
 on fs
     wait /dev/block/platform/soc/${ro.boot.bootdevice}
     symlink /dev/block/platform/soc/${ro.boot.bootdevice} /dev/block/bootdevice
+    # Mount firmware
+    mkdir /vendor/firmware_mnt
+    mount vfat /dev/block/bootdevice/by-name/apnhlos /vendor/firmware_mnt ro
+    export ANDROID_ROOT /system_root
