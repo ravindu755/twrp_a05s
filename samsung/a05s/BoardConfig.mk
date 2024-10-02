@@ -83,8 +83,7 @@ PLATFORM_VERSION := 16.1.0
 
 # Kernel Modules
 #TW_LOAD_VENDOR_MODULES := true
-TW_LOAD_VENDOR_MODULES := $(shell echo \"$(shell ls $(DEVICE_PATH)/recovery/root/lib/modules)\")
-TW_LOAD_VENDOR_MODULES := $(shell echo \"$(shell ls $(DEVICE_PATH)/recovery/root/vendor/lib/modules)\")
+TW_LOAD_VENDOR_MODULES := $(shell echo \"$(shell ls $(DEVICE_PATH)/recovery/root/lib/modules) $(shell ls $(DEVICE_PATH)/recovery/root/vendor/lib/modules)\")
 
 # TWRP Configuration
 TW_THEME := portrait_hdpi
@@ -97,6 +96,6 @@ TW_H_OFFSET := -84
 TW_HAS_DOWNLOAD_MODE := true
 TW_EXTRA_LANGUAGES := true
 TW_EXCLUDE_DEFAULT_USB_INIT := true
-TW_DEVICE_VERSION := Ravindu Deshan #use your name
+TW_DEVICE_VERSION := @ravindu644
 TW_USE_SAMSUNG_HAPTICS := true
 TW_NO_REBOOT_BOOTLOADER := true
