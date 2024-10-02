@@ -1,0 +1,20 @@
+/vendor/lib/modules/cmd.ko:
+/vendor/lib/modules/panel_event_notifier.ko:
+/vendor/lib/modules/lct_tp.ko:
+/vendor/lib/modules/tp_info.ko:
+/vendor/lib/modules/qcom_va_minidump.ko:
+/vendor/lib/modules/lct_tp.ko:
+/vendor/lib/modules/msm-mmrm.ko:
+/vendor/lib/modules/mdt_loader.ko:
+/vendor/lib/modules/atmel_mxt_ts.ko: /vendor/lib/modules/panel_event_notifier.ko
+/vendor/lib/modules/goodix_ts.ko: /vendor/lib/modules/panel_event_notifier.ko
+/vendor/lib/modules/icnl9922c.ko: /vendor/lib/modules/lct_tp.ko /vendor/lib/modules/cmd.ko /vendor/lib/modules/tp_info.ko /vendor/lib/modules/msm_drm.ko /vendor/lib/modules/qcom_va_minidump.ko /vendor/lib/modules/panel_event_notifier.ko
+/vendor/lib/modules/msm_drm.ko: /vendor/lib/modules/qcom_va_minidump.ko /vendor/lib/modules/panel_event_notifier.ko
+/vendor/lib/modules/ilitek.ko: /vendor/lib/modules/lct_tp.ko /vendor/lib/modules/cmd.ko /vendor/lib/modules/tp_info.ko /vendor/lib/modules/msm_drm.ko /vendor/lib/modules/qcom_va_minidump.ko /vendor/lib/modules/panel_event_notifier.ko
+/vendor/lib/modules/msm_video.ko: /vendor/lib/modules/msm-mmrm.ko /vendor/lib/modules/mdt_loader.ko
+/vendor/lib/modules/pt_ts.ko: /vendor/lib/modules/panel_event_notifier.ko
+/vendor/lib/modules/pt_device_access.ko: /vendor/lib/modules/pt_ts.ko /vendor/lib/modules/panel_event_notifier.ko
+/vendor/lib/modules/pt_i2c.ko: /vendor/lib/modules/pt_ts.ko /vendor/lib/modules/panel_event_notifier.ko
+/vendor/lib/modules/pt_ts.ko: /vendor/lib/modules/panel_event_notifier.ko
+/vendor/lib/modules/raydium_ts.ko: /vendor/lib/modules/panel_event_notifier.ko
+/vendor/lib/modules/synaptics_tcm_ts.ko: /vendor/lib/modules/panel_event_notifier.ko
