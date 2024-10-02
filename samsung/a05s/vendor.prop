@@ -1,0 +1,8 @@
+# USB
+vendor.usb.use_ffs_mtp=1
+vendor.usb.controller=4e00000.dwc3
+
+# Storage
+external_storage.projid.enabled=1
+external_storage.casefold.enabled=1
+external_storage.sdcardfs.enabled=0
