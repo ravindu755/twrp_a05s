@@ -59,6 +59,19 @@ BOARD_SUPER_PARTITION_GROUPS := samsung_dynamic_partitions
 BOARD_SAMSUNG_DYNAMIC_PARTITIONS_PARTITION_LIST := system odm product system_dlkm system_ext vendor vendor_dlkm
 BOARD_SAMSUNG_DYNAMIC_PARTITIONS_SIZE := 9017753600
 
+# Root
+BOARD_ROOT_EXTRA_FOLDERS := \
+    carrier \
+    efs \
+    omr \
+    optics \
+    prism \
+    spu \
+    persist \
+    sec_efs \
+    firmware \
+    metadata \
+
 # Recovery
 BOARD_INCLUDE_RECOVERY_DTBO := true
 TARGET_RECOVERY_PIXEL_FORMAT := RGBX_8888
