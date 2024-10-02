@@ -38,7 +38,8 @@ on init
     insmod /vendor/lib/modules/cmd.ko
     insmod /vendor/lib/modules/tp_info.ko
     insmod /lib/modules/msm_drm.ko dsi_display0=qcom,mdss_dsi_v2_ili7807s_tm_fhd_90hz_video:ilitek.tpsensor=ILITEK_TMB_ILI7807S
-    insmod /vendor/lib/modules/ilitek.ko tpsensor=ILITEK_TMB_ILI7807S    
+    insmod /vendor/lib/modules/ilitek.ko tpsensor=ILITEK_TMB_ILI7807S
+    insmod /vendor/lib/modules/leds-qpnp-vibrator-ldo.ko    
 
 on property:ro.boot.usbcontroller=*
     setprop sys.usb.controller ${ro.boot.usbcontroller}
